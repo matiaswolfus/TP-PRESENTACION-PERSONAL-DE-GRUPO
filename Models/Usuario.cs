@@ -26,6 +26,18 @@ public Usuario()
 {
     
 }
+internal int ObtenerEdad()
+{
+    int edad;
+    DateTime hoy = DateTime.Today;
 
+    edad = hoy.Year - this.fechaNacimiento.Year;
+    if (this.fechaNacimiento.Date > hoy.AddYears(-edad).Date) // use chat para esto porque no sabia como hacer para los que no cumplieron todavia
+        {
+            edad--;
+        }
+
+    return edad;
+}
 
 }
