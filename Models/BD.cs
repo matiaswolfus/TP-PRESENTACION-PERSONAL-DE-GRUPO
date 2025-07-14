@@ -37,8 +37,6 @@ public class BD
             datosFamiliares = connection.Query<datoFamiliar> (query,new { idUsuario}).ToList();
         }
         return datosFamiliares;
-
-
     }
     List<datoInteres> GetDatoInteres(int idUsuario)
     {
