@@ -1,17 +1,25 @@
 namespace TP03;
+using Newtonsoft.Json;
+
 public class datoFamiliar
 {
-    public int idDatoFamiliar {get; private set;}
+    [JsonProperty("idDatoFamiliar")]
+    public int idDatoFamiliar { get; private set; }
 
-    public int idUsuario {get; private set;}
+    [JsonProperty("idUsuario")]
+    public int idUsuario { get; private set; }
 
-    public string nombre {get; private set;}
+    [JsonProperty("nombre")]
+    public string nombre { get; private set; }
 
-    public string apellido {get; private set;}
+    [JsonProperty("apellido")]
+    public string apellido { get; private set; }
 
-    public string parentesco{get; private set;}
+    [JsonProperty("parentesco")]
+    public string parentesco { get; private set; }
 
-    public string descripcion {get; private set;}
+    [JsonProperty("descripcion")]
+    public string descripcion { get; private set; }
 
 
     public datoFamiliar(int idDatoFamiliar, int idUsuario, string nombre, string apellido, string parentesco, string descripcion)

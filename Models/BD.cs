@@ -1,23 +1,23 @@
 namespace TP03;
 using Microsoft.Data.SqlClient;
 using Dapper;
-public class BD
+static public class BD
 {
-    private static string _connectionString = @"Server = localhost; DataBase = [PRESENTACION DE GRUPO];Integrated Security = True; TrustServerCertificate = True;"; 
+    private static string _connectionString = "Server=localhost;Database=PRESENTACION DE GRUPO;Trusted_Connection=True; TrustServerCertificate=True"; 
 
 
-    public int logIn(string mail, string constraseña)
+    static public int logIn(string mail, string contraseña)
     {
         int idUsuario = -1;
         using (SqlConnection connection = new SqlConnection(_connectionString))
         {
             string query = "SELECT * FROM Usuario WHERE mail = @mail AND contraseña = @contraseña";
-            idUsuario = connection.QueryFirstOrDefault <int> (query, new {mail,constraseña});
+            idUsuario = connection.QueryFirstOrDefault <int> (query, new {mail,contraseña});
         }
         return idUsuario;
     }
 
-    public Usuario GetUsuario(int idUsuario)
+    static public Usuario GetUsuario(int idUsuario)
     {
         Usuario usuario = new Usuario();
         using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -28,7 +28,7 @@ public class BD
         return usuario;
 
     }
-    List<datoFamiliar> GetDatoFamiliar(int idUsuario)
+    static public List<datoFamiliar> GetDatoFamiliar(int idUsuario)
     {
         List<datoFamiliar> datosFamiliares = new List<datoFamiliar>();
         using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -38,7 +38,7 @@ public class BD
         }
         return datosFamiliares;
     }
-    List<datoInteres> GetDatoInteres(int idUsuario)
+    static public List<datoInteres> GetDatoInteres(int idUsuario)
     {
         List<datoInteres> datosDeInteres = new List<datoInteres>();
         using (SqlConnection connection = new SqlConnection(_connectionString))

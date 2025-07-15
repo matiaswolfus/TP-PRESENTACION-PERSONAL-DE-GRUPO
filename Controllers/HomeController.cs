@@ -17,4 +17,38 @@ public class HomeController : Controller
     {
         return View();
     }
+
+        [HttpPost]
+      public IActionResult logIn(string mail, string contraseña)
+    {
+        int idUsuario = -1;
+        idUsuario = BD.logIn(mail, contraseña);
+        if (idUsuario == -1) 
+        {
+            return View("logueoFallido");
+        } else 
+        {
+            Usuario usuario = BD.GetUsuario(idUsuario);
+            HttpContext.Session.SetString("logueo", objeto.ObjetoATexto(usuario));
+            return View ("mostrarUsuario");
+        }
+    }
+    public IActionResult getDatoF(int idUsuario)
+    {
+        ViewBag.listaDatoFamiliar = new List<datoFamiliar>();
+        ViewBag.listaDatoFamiliar = BD.GetDatoFamiliar(idUsuario);
+        return View ("datoFamiliar");
+    
+    }
+
+    public IActionResult getDatoI(int idUsuario)
+    {
+        ViewBag.listaInteres = new List<datoInteres>();
+        ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
+        return View ("datoInteres");
+    }
+    public IActionResult logueo ()
+    {
+        return View ("logueo");
+    }
 }

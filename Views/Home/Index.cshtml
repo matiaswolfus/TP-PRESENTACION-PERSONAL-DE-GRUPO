@@ -1,8 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
+﻿<body class="INDEX">
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
-</div>
+<main>
+
+<section class="MensajeAyudante">
+        <div>
+            <h2>toque el botón para ir a loguearse!</h2>
+        </div>
+</section>
+
+<form action='@Url.Action("logueo", "Home")' method="post">
+    <input type="submit" value="¡EMPEZAR!" />
+</form>
+</main>
+
+</body>

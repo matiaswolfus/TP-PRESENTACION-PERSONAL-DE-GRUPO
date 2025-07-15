@@ -18,8 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = z:\2025\PROGRAMACION II\TP REMAKE PRESENTACION DE GRUPO\TP03
 build_property._RazorSourceGeneratorDebug = 
 
+[z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/datoFamiliar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXRvRmFtaWxpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/datoInteres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXRvSW50ZXJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/logueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2d1ZW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/logueoFallido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2d1ZW9GYWxsaWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/mostrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtb3N0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Shared/_Layout.cshtml]
