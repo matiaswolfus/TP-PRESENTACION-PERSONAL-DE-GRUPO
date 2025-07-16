@@ -35,20 +35,32 @@ public class HomeController : Controller
     }
     public IActionResult getDatoF(int idUsuario)
     {
-        ViewBag.listaDatoFamiliar = new List<datoFamiliar>();
-        ViewBag.listaDatoFamiliar = BD.GetDatoFamiliar(idUsuario);
-        return View ("datoFamiliar");
-    
+    string usuarioStr = HttpContext.Session.GetString("logueo");
+    if (usuarioStr == null) 
+    {
+        return RedirectToAction("Index");
+    }
+    ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
+    return View("datoInteres");
     }
 
     public IActionResult getDatoI(int idUsuario)
     {
-        ViewBag.listaInteres = new List<datoInteres>();
-        ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
-        return View ("datoInteres");
+    string usuarioStr = HttpContext.Session.GetString("logueo");
+    if (usuarioStr == null)
+    { 
+        return RedirectToAction("Index");
+    }
+    ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
+    return View("datoInteres");
     }
     public IActionResult logueo ()
     {
         return View ("logueo");
+    }
+        public IActionResult logOut()
+    {
+        HttpContext.Session.Remove("logueo");
+        return RedirectToAction("Index");
     }
 }

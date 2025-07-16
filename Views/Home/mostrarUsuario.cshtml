@@ -1,0 +1,21 @@
+<body class="INDEX">
+
+<main>
+
+<section>
+        <div>
+            <h2>¡Toque el botón para ir a loguearse!</h2>
+        </div>
+</section>
+<form action='@Url.Action("getDatoF", "Home")' method="post">
+    <input type="submit" value="Datos Familiares" />
+</form>
+<form action='@Url.Action("getDatoI", "Home")' method="post">
+    <input type="submit" value="Datos Interes" />
+</form>
+<form action='@Url.Action("logOut", "Home")' method="post">
+    <input type="submit" value="Cerrar Sesión" />
+</form>
+</main>
+
+</body>
