@@ -1,0 +1,36 @@
+<body class="INDEX">
+
+<main>
+
+<section>
+        <div>
+            <h2>¡Aqui estan sus datos familiares!</h2>
+        </div>
+        <div>
+            @if (ViewBag.listaFamiliar != null)
+            {
+                <ul>
+                    @foreach (var dato in ViewBag.listaFamiliar)
+                    {
+                        <li>
+                            <h2>@dato.nombre @dato.apellido, @dato.parentesco</h2>
+                        </li>
+                               <h5>DESCRIPCIÓN:</h5> <p>@dato.descrpcion</p>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No hay datos de interés para mostrar.</p>
+            }
+        </div>
+</section>
+<form action='@Url.Action("volver", "Home")' method="post">
+    <input type="submit" value="Volver" />
+</form>
+<form action='@Url.Action("logOut", "Home")' method="post">
+    <input type="submit" value="Cerrar Sesión" />
+</form>
+</main>
+
+</body>

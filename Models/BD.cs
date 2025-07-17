@@ -11,7 +11,7 @@ static public class BD
         int idUsuario = -1;
         using (SqlConnection connection = new SqlConnection(_connectionString))
         {
-            string query = "SELECT * FROM Usuario WHERE mail = @mail AND contraseña = @contraseña";
+            string query = "SELECT idUsuario FROM Usuario WHERE mail = @mail AND contraseña = @contraseña";
             idUsuario = connection.QueryFirstOrDefault <int> (query, new {mail,contraseña});
         }
         return idUsuario;
@@ -33,7 +33,7 @@ static public class BD
         List<datoFamiliar> datosFamiliares = new List<datoFamiliar>();
         using (SqlConnection connection = new SqlConnection(_connectionString))
         {
-            string query = "SELECT nombre,apellido,parentesco,descripcion FROM datoFamiliar WHERE idUsuario = @idUsuario";
+            string query = "SELECT nombre,apellido,parentesco,descrpcion FROM datoFamiliar WHERE idUsuario = @idUsuario";
             datosFamiliares = connection.Query<datoFamiliar> (query,new { idUsuario}).ToList();
         }
         return datosFamiliares;

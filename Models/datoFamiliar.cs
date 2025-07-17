@@ -19,7 +19,7 @@ public class datoFamiliar
     public string parentesco { get; private set; }
 
     [JsonProperty("descripcion")]
-    public string descripcion { get; private set; }
+    public string descrpcion { get; private set; }
 
 
     public datoFamiliar(int idDatoFamiliar, int idUsuario, string nombre, string apellido, string parentesco, string descripcion)
@@ -28,7 +28,7 @@ public class datoFamiliar
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.descripcion = descripcion;
+        this.descrpcion = descripcion;
         this.parentesco = parentesco;
     }
     public datoFamiliar()

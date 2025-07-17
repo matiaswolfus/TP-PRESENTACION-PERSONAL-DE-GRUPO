@@ -28,29 +28,28 @@ public class HomeController : Controller
             return View("logueoFallido");
         } else 
         {
-            Usuario usuario = BD.GetUsuario(idUsuario);
-            HttpContext.Session.SetString("logueo", objeto.ObjetoATexto(usuario));
+            HttpContext.Session.SetString("idUser", idUsuario.ToString());
             return View ("mostrarUsuario");
         }
     }
-    public IActionResult getDatoF(int idUsuario)
+    public IActionResult getDatoF()
     {
-    string usuarioStr = HttpContext.Session.GetString("logueo");
-    if (usuarioStr == null) 
+    if (HttpContext.Session.GetString("idUser")== null) 
     {
         return RedirectToAction("Index");
     }
-    ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
-    return View("datoInteres");
+    int idusuario = int.Parse(HttpContext.Session.GetString("idUser"));
+    ViewBag.listaFamiliar = BD.GetDatoFamiliar(idusuario);
+    return View("datoFamiliar");
     }
 
-    public IActionResult getDatoI(int idUsuario)
+    public IActionResult getDatoI()
     {
-    string usuarioStr = HttpContext.Session.GetString("logueo");
-    if (usuarioStr == null)
-    { 
+    if (HttpContext.Session.GetString("idUser")== null) 
+    {
         return RedirectToAction("Index");
     }
+    int idUsuario = int.Parse(HttpContext.Session.GetString("idUser"));
     ViewBag.listaInteres = BD.GetDatoInteres(idUsuario);
     return View("datoInteres");
     }
@@ -60,7 +59,11 @@ public class HomeController : Controller
     }
         public IActionResult logOut()
     {
-        HttpContext.Session.Remove("logueo");
+        HttpContext.Session.Remove("idUser");
         return RedirectToAction("Index");
+    }
+    public IActionResult volver()
+    {
+        return View("mostrarUsuario");
     }
 }

@@ -4,16 +4,33 @@
 
 <section>
         <div>
-            <h2>¡Aqui estan sus datos Familiares!</h2>
+            <h2>¡Aqui estan sus datos de Interes!</h2>
         </div>
         <div>
-            <p>
+            @if (ViewBag.listaInteres != null)
+            {
+                <ul>
+                    @foreach (var interes in ViewBag.listaInteres)
+                    {
+                        <li>
+                            <h2>@interes.interes @interes.</h2>
+                        </li>
+                    }
+                </ul>
+                
 
-            </p>
+            }
+            else
+            {
+                <p>No hay datos de interés para mostrar.</p>
+            }
         </div>
 </section>
-<form action='@Url.Action("Index", "Home")' method="post">
+<form action='@Url.Action("volver", "Home")' method="post">
     <input type="submit" value="Volver" />
+</form>
+<form action='@Url.Action("logOut", "Home")' method="post">
+    <input type="submit" value="Cerrar Sesión" />
 </form>
 </main>
 
