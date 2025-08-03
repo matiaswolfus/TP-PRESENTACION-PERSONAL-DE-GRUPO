@@ -21,15 +21,16 @@ public class HomeController : Controller
         [HttpPost]
       public IActionResult logIn(string mail, string contraseña)
     {
-        int idUsuario = -1;
-        idUsuario = BD.logIn(mail, contraseña);
-        if (idUsuario == -1) 
+        int idUsuario = BD.logIn(mail, contraseña);
+        if (idUsuario <= 0)
         {
             return View("logueoFallido");
-        } else 
+        }
+        else
         {
-            HttpContext.Session.SetString("idUser", idUsuario.ToString());
-            return View ("mostrarUsuario");
+        HttpContext.Session.SetString("idUser", idUsuario.ToString());
+        Usuario usuario = BD.GetUsuario(idUsuario); 
+        return View("mostrarUsuario", usuario);            
         }
     }
     public IActionResult getDatoF()
@@ -64,6 +65,12 @@ public class HomeController : Controller
     }
     public IActionResult volver()
     {
-        return View("mostrarUsuario");
+        if (HttpContext.Session.GetString("idUser") == null)
+        {
+            return RedirectToAction("Index");
+        }
+        int idUsuario = int.Parse(HttpContext.Session.GetString("idUser"));
+        Usuario usuario = BD.GetUsuario(idUsuario);
+        return View("mostrarUsuario", usuario);  
     }
 }

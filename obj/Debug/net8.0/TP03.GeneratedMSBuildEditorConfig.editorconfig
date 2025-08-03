@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP03
 build_property.RootNamespace = TP03
-build_property.ProjectDir = Z:\2025\PROGRAMACION II\TP REMAKE PRESENTACION DE GRUPO\TP03\
+build_property.ProjectDir = C:\Users\matwo\TP-PRESENTACION-PERSONAL-DE-GRUPO\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\2025\PROGRAMACION II\TP REMAKE PRESENTACION DE GRUPO\TP03
+build_property.MSBuildProjectDirectory = C:\Users\matwo\TP-PRESENTACION-PERSONAL-DE-GRUPO
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/datoFamiliar.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/datoFamiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXRvRmFtaWxpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/datoInteres.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/datoInteres.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXRvSW50ZXJlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/Index.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/logueo.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/logueo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2d1ZW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/logueoFallido.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/logueoFallido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2d1ZW9GYWxsaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Home/mostrarUsuario.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Home/mostrarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtb3N0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Shared/_Layout.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/_ViewImports.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROGRAMACION II/TP REMAKE PRESENTACION DE GRUPO/TP03/Views/_ViewStart.cshtml]
+[C:/Users/matwo/TP-PRESENTACION-PERSONAL-DE-GRUPO/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,21 +1,36 @@
-<body class="INDEX">
+@model Usuario
+
+<body class="mostrarUsuario">
 
 <main>
 
-<section>
-        <div>
-            <h2>¡Toque el botón para ir a loguearse!</h2>
-        </div>
-</section>
-<form action='@Url.Action("getDatoF", "Home")' method="post">
-    <input type="submit" value="Datos Familiares" />
-</form>
-<form action='@Url.Action("getDatoI", "Home")' method="post">
-    <input type="submit" value="Datos Interes" />
-</form>
-<form action='@Url.Action("logOut", "Home")' method="post">
-    <input type="submit" value="Cerrar Sesión" />
-</form>
+    @if (Model != null)
+    {
+        <section>
+            <div>
+                <h2>¡Aqui estan sus datos de Usuario!</h2>
+                <p><strong>Nombre:</strong> @Model.nombre</p>
+                <p><strong>Apellido:</strong> @Model.apellido</p>
+                <p><strong>Mail:</strong> @Model.mail</p>
+                <p><strong>Fecha de Nacimiento:</strong> @Model.fechaNacimiento.ToShortDateString()</p>
+                <p><strong>Foto:</strong> <img src="@Model.foto" alt="Foto de usuario" style="max-width:150px;" /></p>
+            </div>
+        </section>
+    }
+
+    <div>
+        <h2>¡Seleccione una opción!</h2>
+    </div>
+
+    <form action='@Url.Action("getDatoF", "Home")' method="post">
+        <input type="submit" value="Datos Familiares" />
+    </form>
+    <form action='@Url.Action("getDatoI", "Home")' method="post">
+        <input type="submit" value="Datos Interes" />
+    </form>
+    <form action='@Url.Action("logOut", "Home")' method="post">
+        <input type="submit" value="Cerrar Sesión" />
+    </form>
 </main>
 
 </body>

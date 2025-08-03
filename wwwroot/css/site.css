@@ -1,23 +1,102 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+:root {
+  --color1: #02425d;
+  --color2: #1d5874;
+  --color3: #386f8c;
+  --color4: #5285a3;
+  --color5: #6d9bba;
 }
 
 body {
-  margin: 10px;
-  padding: 10px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--color1) 0%, var(--color5) 100%);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(2, 66, 93, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(2, 66, 93, 0.2);
+  padding: 32px;
+}
+
+section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--color2);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(56, 111, 140, 0.15);
+}
+
+h2 {
+  color: var(--color5);
+  margin-bottom: 18px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+p, label {
+  color: #eaf6fb;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: var(--color4);
+}
+
+input[type="submit"], button {
+  background: var(--color3);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: var(--color4);
+}
+
+img {
+  border-radius: 8px;
+  border: 2px solid var(--color5);
+  box-shadow: 0 2px 8px rgba(82, 133, 163, 0.2);
+  margin-top: 8px;
+}
 
 footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  background: var(--color2);
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  border-top: 2px solid var(--color4);
+  margin-top: 40px;
+  border-radius: 0 0 16px 16px;
+}
+
+.mostrarUsuario, .datoFamiliar, .datoInteres, .logueo, .logueoFallido, .INDEX {
+  background: linear-gradient(135deg, var(--color2) 0%, var(--color4) 100%);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(29, 88, 116, 0.15);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 12px;
+  }
+  section {
+    padding: 12px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
 }

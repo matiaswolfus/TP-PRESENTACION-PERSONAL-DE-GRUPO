@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 using Dapper;
 static public class BD
 {
-    private static string _connectionString = "Server=localhost;Database=PRESENTACION DE GRUPO;Trusted_Connection=True; TrustServerCertificate=True"; 
+    private static string _connectionString = @"Server=localhost\SQLEXPRESS;Database=PRESENTACION DE GRUPO;Trusted_Connection=True; TrustServerCertificate=True"; 
 
 
     static public int logIn(string mail, string contraseña)
